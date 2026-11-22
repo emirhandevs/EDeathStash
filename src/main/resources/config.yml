@@ -1,0 +1,58 @@
+# ============================================================
+#  eDeathStash - Configuration
+# ============================================================
+
+# Collect drops from players killed by someone with edeathstash.use
+collect-player-kills: true
+
+# Collect drops from mobs killed by someone with edeathstash.use
+collect-mob-kills: true
+
+# Maximum item stacks stored in one stash chest (54 = double chest)
+max-stash-slots: 54
+
+# If true, empty stashes (no drops) are not created
+skip-empty-stashes: true
+
+# Drop the stash chest at the victim location
+drop-stash-item: true
+
+# Stash chest item appearance
+stash-item:
+  material: CHEST
+  name: "&6Death Stash"
+  lore:
+    - "&7Contains loot from a kill."
+    - ""
+    - "&eLeft-click &7to preview contents"
+    - "&eRight-click &7to claim all items"
+    - "&cCannot be placed."
+  custom-model-data: 0
+
+# Worlds where the plugin is active. Empty = all worlds.
+enabled-worlds: []
+
+# Worlds where collection is disabled.
+disabled-worlds: []
+
+messages:
+  prefix: "&8[&6eDeathStash&8] &f"
+  no-permission: "%prefix%&cYou do not have permission."
+  reloaded: "%prefix%Configuration reloaded."
+  player-only: "%prefix%&cPlayers only."
+  stash-help:
+    - "%prefix%&6Death Stash"
+    - "&7When you kill a player or mob, their drops"
+    - "&7go into a &eStash Chest &7instead of the ground."
+    - "&eLeft-click &7the chest to preview."
+    - "&eRight-click &7to claim everything."
+    - "&cThe chest cannot be placed as a block."
+  preview-title: "&8Death Stash Preview"
+  claimed: "%prefix%&aClaimed &e%count% &astack(s) from the stash."
+  claimed-partial: "%prefix%&eInventory full. &a%claimed% &estack(s) claimed, &c%dropped% &edropped on the ground."
+  empty-stash: "%prefix%&cThis stash is empty."
+  not-stash: "%prefix%&cThat is not a death stash."
+  cannot-place: "%prefix%&cYou cannot place a Death Stash."
+  stash-created: "%prefix%&aDeath stash created with &e%count% &astack(s)."
+  give-success: "%prefix%&aGave an empty death stash to &e%player%&a."
+  invalid-player: "%prefix%&cPlayer not found."

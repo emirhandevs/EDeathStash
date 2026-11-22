@@ -1,0 +1,23 @@
+name: eDeathStash
+version: '${project.version}'
+main: com.edeathstash.EDeathStash
+api-version: '1.20'
+authors: [eDeathStash]
+description: Collect kill drops into a claimable stash chest. Left-click to preview, right-click to claim.
+commands:
+  stash:
+    description: Death stash help / info
+    usage: /stash
+    permission: edeathstash.use
+  edeathstash:
+    description: eDeathStash admin
+    aliases: [eds, deathstash]
+    usage: /edeathstash <reload|give>
+    permission: edeathstash.admin
+permissions:
+  edeathstash.use:
+    description: Collect kills into stash chests and use /stash
+    default: false
+  edeathstash.admin:
+    description: Admin commands
+    default: op
